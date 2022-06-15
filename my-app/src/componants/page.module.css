@@ -1,0 +1,43 @@
+.container {
+  width: 98%;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 1fr;
+  grid-auto-rows: 0;
+  overflow-y: hidden;
+  justify-content: space-between;
+}
+
+a:hover {
+  color: rgb(170, 34, 233);
+}
+
+.innerbox h3 {
+  position: relative;
+  z-index: 3;
+  color: #000000;
+  opacity: 1;
+  transform: translateY(-55px);
+  transition: 0.5s all;
+  text-align: center;
+  background-color: rgb(236, 234, 234);
+  font-size: 155%;
+}
+.innerbox:hover {
+  transform: scale(1.3);
+  z-index: 2;
+  cursor: pointer;
+  padding: 10px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}

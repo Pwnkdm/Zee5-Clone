@@ -1,0 +1,54 @@
+.container {
+  width: 400px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.container h1 {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.container p {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.logo {
+  width: 300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.or {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 50%;
+  background: rgba(147, 118, 216, 0.205);
+}
+.or h3 {
+  padding: 5px;
+  font-weight: bolder;
+  font-size: large;
+}
+.inpDiv {
+  margin-top: 30px;
+}
+
+.glogo {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  background: white;
+  box-sizing: border-box;
+  padding: 5px;
+  border: 1px solid red;
+}
+
+.glogo p {
+  color: pink;
+  margin-top: -40px;
+}
