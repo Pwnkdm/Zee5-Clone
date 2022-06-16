@@ -19,11 +19,7 @@ const initstate = {
 export const reducer = (state = initstate, { type, payload }) => {
   switch (type) {
     case FILTER: {
-      const fdata = state.home.map((el) => {
-        return el.ZeeOriginals;
-      });
-
-      let data = fdata[0].filter((el) => {
+      let data = state.home.filter((el) => {
         if (el.category === payload) {
           return el;
         }
@@ -52,6 +48,7 @@ export const reducer = (state = initstate, { type, payload }) => {
     }
 
     case GET_MOVIES: {
+      console.log(payload);
       return {
         ...state,
         home: payload,

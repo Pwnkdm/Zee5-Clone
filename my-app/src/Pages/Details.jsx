@@ -1,7 +1,7 @@
 import { Select } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { filterdata, getdatahome } from "../Redux/actions";
+import { filterdata, getmovies } from "../Redux/actions";
 import styles from "./details.module.css";
 
 const Details = () => {
@@ -9,25 +9,13 @@ const Details = () => {
 
   const dispatch = useDispatch();
 
-  let data = Data.map((el) => {
-    return el.ZeeOriginals;
-  });
-
-  const newdata = data.map((el) => {
-    // if (el === "ZeeOriginals") {
-    return el;
-    // }
-  });
-
-  console.log(newdata);
-
   const onchange = (e) => {
     dispatch(filterdata(e.target.value));
   };
 
   useEffect(() => {
-    dispatch(getdatahome());
-  }, []);
+    dispatch(getmovies());
+  }, [dispatch]);
 
   return (
     <div>
@@ -49,22 +37,19 @@ const Details = () => {
             <option value="horror">Horror</option>
           </Select>
         </div>
-        {Data.map((el, i) => (
-          <div>
-            <div className={styles.grid}>
-              {el.ZeeOriginals.map((el, i) => (
-                <div className={styles.innerbox}>
-                  <img src={el.src} alt="poster" /> <br />
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <br />
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  </p>
-                </div>
-              ))}
-            </div>
+
+        <div>
+          <div className={styles.grid}>
+            {Data.map((el, i) => (
+              <div key={i} className={styles.innerbox}>
+                <img src={el.src} alt="poster" /> <br />
+                <p>Lorem ipsum dolor sit amet.</p>
+                <br />
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
     </div>
   );

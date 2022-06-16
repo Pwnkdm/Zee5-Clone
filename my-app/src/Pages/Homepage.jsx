@@ -11,7 +11,6 @@ const Homepage = () => {
     dispatch(getdatahome());
   }, []);
 
-  //   console.log(Data);
   return (
     <div>
       <Page data={Data} />

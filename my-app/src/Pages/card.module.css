@@ -1,0 +1,22 @@
+.box {
+  width: 400px;
+  height: 500px;
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 60px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.inp {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.header {
+  text-align: left;
+  font-weight: bold;
+  font-size: xx-large;
+  margin-bottom: 20px;
+}

@@ -52,7 +52,7 @@ export const getdatamovie = () => (dispatch) => {
 };
 
 export const getmovies = () => (dispatch) => {
-  axios.get("http://localhost:8080/homepage/ZeeOriginals").then((r) => {
+  axios.get("http://localhost:8080/allmovies").then((r) => {
     console.log(r.data);
     dispatch({
       type: GET_MOVIES,

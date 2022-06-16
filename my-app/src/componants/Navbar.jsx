@@ -47,6 +47,10 @@ const Navbar = () => {
     dispatch(logout());
     navigate("/login");
   };
+
+  const handlec = () => {
+    navigate("/offer");
+  };
   return (
     <div>
       <Container
@@ -139,6 +143,7 @@ const Navbar = () => {
                   fontSize={12}
                   w={140}
                   colorScheme="purple"
+                  onClick={handlec}
                   leftIcon={
                     <Icon as={RiVipCrownFill} width="18px" height="18px" />
                   }
