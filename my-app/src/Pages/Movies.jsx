@@ -1,12 +1,14 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import Page from "../componants/Page";
+import { getdatamovie } from "../Redux/actions";
 
 const Movies = () => {
-  const [Data, setData] = useState([]);
+  const dispatch = useDispatch();
+  const Data = useSelector((state) => state.movies);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/movies").then((r) => setData(r.data));
+    dispatch(getdatamovie());
   }, []);
   return (
     <div>

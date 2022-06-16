@@ -7,7 +7,6 @@ const Homepage = () => {
   const Data = useSelector((state) => state.home);
 
   const dispatch = useDispatch();
-
   useEffect(() => {
     dispatch(getdatahome());
   }, []);

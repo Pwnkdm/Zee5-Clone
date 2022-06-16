@@ -125,7 +125,7 @@ const Footer = () => {
             <a href="/">Jeet Ki Zid</a>
           </div>
           <div>
-            <a href="/">Bochoo Ka Khel</a>
+            <a href="/">Bichoo Ka Khel</a>
           </div>
           <div>
             <a href="/">State of Seige</a>

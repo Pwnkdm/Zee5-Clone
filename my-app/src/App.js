@@ -10,6 +10,7 @@ import Music from "./Pages/Music";
 import Login from "./Pages/Login";
 import Ragister from "./Pages/Ragister";
 import Aboutus from "./Pages/Aboutus";
+import Details from "./Pages/Details";
 function App() {
   return (
     <div className="App">
@@ -23,6 +24,7 @@ function App() {
           <Route path="/login" element={<Login />}></Route>
           <Route path="/signup" element={<Ragister />}></Route>
           <Route path="/aboutus" element={<Aboutus />}></Route>
+          <Route path="/details" element={<Details />}></Route>
         </Routes>
         <Footer />
       </ChakraProvider>

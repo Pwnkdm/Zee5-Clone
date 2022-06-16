@@ -1,13 +1,16 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import Page from "../componants/Page";
+import { getdatatv } from "../Redux/actions";
 
 const Tvshows = () => {
-  const [Data, setData] = useState([]);
+  const dispatch = useDispatch();
+  const Data = useSelector((state) => state.tv);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/tvshows").then((r) => setData(r.data));
+    dispatch(getdatatv());
   }, []);
+
   return (
     <div>
       {}

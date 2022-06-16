@@ -8,23 +8,22 @@
 }
 .flex2 {
   display: flex;
-
   justify-content: space-between;
   flex-direction: row;
 }
 
 p {
   font-weight: bold;
-  font-size: 11px;
+  font-size: 13px;
   color: white;
 }
 
 .link {
   width: 70%;
-  margin-left: 50px;
+  margin-left: 90px;
   color: white;
   font-weight: bold;
-  font-size: 11px;
+  font-size: 13px;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -33,7 +32,7 @@ p {
 }
 
 .contents {
-  width: 75%;
+  width: 70%;
   margin: auto;
   display: flex;
   justify-content: space-around;
@@ -56,7 +55,7 @@ p {
 }
 
 .cright {
-  width: 70%;
+  width: 65%;
   margin: auto;
   margin-top: 50px;
   display: flex;

@@ -37,7 +37,7 @@ const Page = ({ data }) => {
           <div className={styles.flex}>
             {" "}
             <h6>ZEE5 Original Series</h6>
-            <a href="/"> More</a>
+            <a href="/details"> More</a>
           </div>
           <div key={i} className={styles.grid}>
             {el.ZeeOriginals.map((el, i) => (
@@ -51,7 +51,7 @@ const Page = ({ data }) => {
           <div className={styles.flex}>
             {" "}
             <h6>ZEE5 Original Series</h6>
-            <a href="/"> More</a>
+            <a href="/details"> More</a>
           </div>
           <div key={i} className={styles.grid}>
             {el.Movies.map((el, i) => (
@@ -65,7 +65,7 @@ const Page = ({ data }) => {
           <div className={styles.flex}>
             {" "}
             <h6>ZEE5 Original Series</h6>
-            <a href="/"> More</a>
+            <a href="/details"> More</a>
           </div>
           <div key={i} className={styles.grid}>
             {el.Marathi.map((el, i) => (
@@ -80,7 +80,7 @@ const Page = ({ data }) => {
           <div className={styles.flex}>
             {" "}
             <h6>ZEE5 Original Series</h6>
-            <a href="/"> More</a>
+            <a href="/details"> More</a>
           </div>
           <div key={i} className={styles.grid}>
             {el.Hindi.map((el, i) => (
@@ -96,7 +96,7 @@ const Page = ({ data }) => {
           <div className={styles.flex}>
             {" "}
             <h6>ZEE5 Original Series</h6>
-            <a href="/"> More</a>
+            <a href="/details"> More</a>
           </div>
           <div key={i} className={styles.grid}>
             {el.Top10.map((el, i) => (

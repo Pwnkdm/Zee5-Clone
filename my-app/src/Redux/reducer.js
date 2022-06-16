@@ -1,7 +1,9 @@
 import {
+  FILTER,
   GET_DATA_HOME,
   GET_DATA_MOVIES,
   GET_DATA_TV,
+  GET_MOVIES,
   LOGIN_SUCESS,
   LOGOUT,
 } from "./actions";
@@ -15,8 +17,21 @@ const initstate = {
 };
 
 export const reducer = (state = initstate, { type, payload }) => {
-  console.log(state);
   switch (type) {
+    case FILTER: {
+      const fdata = state.home.map((el) => {
+        return el.ZeeOriginals;
+      });
+
+      let data = fdata[0].filter((el) => {
+        if (el.category === payload) {
+          return el;
+        }
+      });
+      // console.log(data);
+
+      return { ...state, home: data };
+    }
     case LOGIN_SUCESS: {
       return { ...state, login: true };
     }
@@ -30,6 +45,13 @@ export const reducer = (state = initstate, { type, payload }) => {
     }
 
     case GET_DATA_HOME: {
+      return {
+        ...state,
+        home: payload,
+      };
+    }
+
+    case GET_MOVIES: {
       return {
         ...state,
         home: payload,
