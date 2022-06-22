@@ -5,7 +5,6 @@ export const GET_DATA_HOME = "get/data/homepage";
 export const GET_MOVIES = "get/movies";
 export const GET_DATA_TV = "get/data/tv";
 export const GET_DATA_MOVIES = "get/data/movies";
-const api = "http://localhost:8080/homepage";
 
 export const FILTER = "filter";
 // login logout
@@ -26,7 +25,7 @@ export const filterdata = (payload) => {
 
 // data fetch
 export const getdatahome = () => (dispatch) => {
-  axios.get(api).then((r) => {
+  axios.get("http://localhost:8080/homepage").then((r) => {
     dispatch({
       type: GET_DATA_HOME,
       payload: r.data,

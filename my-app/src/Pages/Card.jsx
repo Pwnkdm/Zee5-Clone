@@ -39,7 +39,7 @@ const Card = () => {
         </div>
         <div>
           <label> Enter CVV</label>
-          <Input variant="flushed" placeholder="Enter CVV" type="number" />
+          <Input type="password" variant="flushed" placeholder="Enter CVV" />
         </div>
         <Button onClick={click} colorScheme="teal" w="90%" size="md">
           Proceed to pay

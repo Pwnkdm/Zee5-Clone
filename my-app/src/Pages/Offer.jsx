@@ -24,7 +24,7 @@ const Offer = () => {
           </div>
           <div>
             <img
-              src="https://cdn-icons.flaticon.com/png/512/4175/premium/4175189.png?token=exp=1655401865~hmac=74bba8ca453e4021826a16f4f1116bd0"
+              src="https://cdn-icons.flaticon.com/png/512/4175/premium/4175189.png?token=exp=1655444567~hmac=75edb4a84f85e493a09fb6b6d393ce8a"
               alt="qmark"
             />
           </div>
@@ -39,7 +39,7 @@ const Offer = () => {
           <p>250+ Web Series</p>
           <div>
             <img
-              src="https://cdn-icons.flaticon.com/png/512/4175/premium/4175189.png?token=exp=1655401865~hmac=74bba8ca453e4021826a16f4f1116bd0"
+              src="https://cdn-icons.flaticon.com/png/512/4175/premium/4175189.png?token=exp=1655444567~hmac=75edb4a84f85e493a09fb6b6d393ce8a"
               alt="qmark"
             />
           </div>
@@ -54,7 +54,7 @@ const Offer = () => {
           <p>Live TV, Before TV</p>
           <div>
             <img
-              src="https://cdn-icons.flaticon.com/png/512/4175/premium/4175189.png?token=exp=1655401865~hmac=74bba8ca453e4021826a16f4f1116bd0"
+              src="https://cdn-icons.flaticon.com/png/512/4175/premium/4175189.png?token=exp=1655444567~hmac=75edb4a84f85e493a09fb6b6d393ce8a"
               alt="qmark"
             />
           </div>
@@ -69,7 +69,7 @@ const Offer = () => {
           <p>Offer: Extra 10% OFF on Cards</p>
           <div>
             <img
-              src="https://cdn-icons.flaticon.com/png/512/4175/premium/4175189.png?token=exp=1655401865~hmac=74bba8ca453e4021826a16f4f1116bd0"
+              src="https://cdn-icons.flaticon.com/png/512/4175/premium/4175189.png?token=exp=1655444567~hmac=75edb4a84f85e493a09fb6b6d393ce8a"
               alt="qmark"
             />
           </div>
@@ -84,7 +84,7 @@ const Offer = () => {
           <p>Watch on Mobile, TV, Laptop</p>
           <div>
             <img
-              src="https://cdn-icons.flaticon.com/png/512/4175/premium/4175189.png?token=exp=1655401865~hmac=74bba8ca453e4021826a16f4f1116bd0"
+              src="https://cdn-icons.flaticon.com/png/512/4175/premium/4175189.png?token=exp=1655444567~hmac=75edb4a84f85e493a09fb6b6d393ce8a"
               alt="qmark"
             />
           </div>
@@ -99,7 +99,7 @@ const Offer = () => {
           <p>Eduaurra Competitive Exams Learning</p>
           <div>
             <img
-              src="https://cdn-icons.flaticon.com/png/512/4175/premium/4175189.png?token=exp=1655401865~hmac=74bba8ca453e4021826a16f4f1116bd0"
+              src="https://cdn-icons.flaticon.com/png/512/4175/premium/4175189.png?token=exp=1655444567~hmac=75edb4a84f85e493a09fb6b6d393ce8a"
               alt="qmark"
             />
           </div>
