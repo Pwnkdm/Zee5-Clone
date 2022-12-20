@@ -8,12 +8,16 @@ import {
   LOGOUT,
 } from "./actions";
 
+import Data from "../db.json";
+
+// console.log(Data);
+
 const token = localStorage.getItem("userinfo");
 const initstate = {
   isAuth: token ? true : false,
-  home: [],
-  tv: [],
-  movies: [],
+  home: Data.homepage,
+  tv: Data.tvshows,
+  movies: Data.movies,
 };
 
 export const reducer = (state = initstate, { type, payload }) => {
@@ -43,7 +47,7 @@ export const reducer = (state = initstate, { type, payload }) => {
     case GET_DATA_HOME: {
       return {
         ...state,
-        home: payload,
+        // home: payload,
       };
     }
 
@@ -51,21 +55,21 @@ export const reducer = (state = initstate, { type, payload }) => {
       console.log(payload);
       return {
         ...state,
-        home: payload,
+        // home: payload,
       };
     }
 
     case GET_DATA_TV: {
       return {
         ...state,
-        tv: payload,
+        // tv: payload,
       };
     }
 
     case GET_DATA_MOVIES: {
       return {
         ...state,
-        movies: payload,
+        // movies: payload,
       };
     }
     default: {

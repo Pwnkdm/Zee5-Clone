@@ -25,38 +25,44 @@ export const filterdata = (payload) => {
 
 // data fetch
 export const getdatahome = () => (dispatch) => {
-  axios.get("http://localhost:8080/homepage").then((r) => {
-    dispatch({
-      type: GET_DATA_HOME,
-      payload: r.data,
-    });
-  });
+  // axios.get("https://thawing-cliffs-71055.herokuapp.com/homepage").then((r) => {
+  //   dispatch({
+  //     type: GET_DATA_HOME,
+  //     payload: r.data,
+  //   });
+  // });
+  dispatch({ type: GET_DATA_HOME });
 };
 
 export const getdatatv = () => (dispatch) => {
-  axios.get("http://localhost:8080/tvshows").then((r) => {
-    dispatch({
-      type: GET_DATA_TV,
-      payload: r.data,
-    });
+  // axios.get("https://thawing-cliffs-71055.herokuapp.com/tvshows").then((r) => {
+  //   dispatch({
+  //     type: GET_DATA_TV,
+  //     payload: r.data,
+  //   });
+  // });
+  dispatch({
+    type: GET_DATA_TV,
   });
 };
 
 export const getdatamovie = () => (dispatch) => {
-  axios.get("http://localhost:8080/movies").then((r) => {
-    dispatch({
-      type: GET_DATA_MOVIES,
-      payload: r.data,
-    });
-  });
+  // axios.get("https://thawing-cliffs-71055.herokuapp.com/movies").then((r) => {
+  //   dispatch({
+  //     type: GET_DATA_MOVIES,
+  //     payload: r.data,
+  //   });
+  // });
 };
 
 export const getmovies = () => (dispatch) => {
-  axios.get("http://localhost:8080/allmovies").then((r) => {
-    console.log(r.data);
-    dispatch({
-      type: GET_MOVIES,
-      payload: r.data,
-    });
-  });
+  // axios
+  //   .get("https://thawing-cliffs-71055.herokuapp.com/allmovies")
+  //   .then((r) => {
+  //     console.log(r.data);
+  //     dispatch({
+  //       type: GET_MOVIES,
+  //       payload: r.data,
+  //     });
+  //   });
 };

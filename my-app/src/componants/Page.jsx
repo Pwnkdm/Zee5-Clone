@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper";
+import { Link } from "react-router-dom";
 
 const Page = ({ data }) => {
   return (
@@ -25,7 +26,7 @@ const Page = ({ data }) => {
             modules={[Pagination, Navigation]}
           >
             {el.bigposter.map((el, i) => (
-              <SwiperSlide key={i}>
+              <SwiperSlide key={i + 1}>
                 <div>
                   <img width="100%" src={el.src} alt="" />
                 </div>
@@ -39,11 +40,14 @@ const Page = ({ data }) => {
             <h6>ZEE5 Original Series</h6>
             <a href="/details"> More</a>
           </div>
-          <div key={i} className={styles.grid}>
+          <div className={styles.grid}>
             {el.ZeeOriginals.map((el, i) => (
-              <div className={styles.innerbox}>
-                <img src={el.src} alt="poster" />
-              </div>
+              <Link to={"/details"}>
+                {" "}
+                <div key={i + 2} className={styles.innerbox}>
+                  <img src={el.src} alt="poster" />
+                </div>
+              </Link>
             ))}
           </div>
 
@@ -53,11 +57,14 @@ const Page = ({ data }) => {
             <h6>ZEE5 Original Series</h6>
             <a href="/details"> More</a>
           </div>
-          <div key={i} className={styles.grid}>
+          <div className={styles.grid}>
             {el.Movies.map((el, i) => (
-              <div className={styles.innerbox}>
-                <img src={el.src} alt="poster" />
-              </div>
+              <Link to={"/details"}>
+                {" "}
+                <div key={i + 3} className={styles.innerbox}>
+                  <img src={el.src} alt="poster" />
+                </div>
+              </Link>
             ))}
           </div>
 
@@ -67,12 +74,15 @@ const Page = ({ data }) => {
             <h6>ZEE5 Original Series</h6>
             <a href="/details"> More</a>
           </div>
-          <div key={i} className={styles.grid}>
+          <div className={styles.grid}>
             {el.Marathi.map((el, i) => (
-              <div className={styles.innerbox}>
-                <img src={el.src} alt="poster" />
-                <p>{el.p}</p>
-              </div>
+              <Link to={"/details"}>
+                {" "}
+                <div key={i + 4} className={styles.innerbox}>
+                  <img src={el.src} alt="poster" />
+                  <p>{el.p}</p>
+                </div>
+              </Link>
             ))}
           </div>
 
@@ -82,12 +92,15 @@ const Page = ({ data }) => {
             <h6>ZEE5 Original Series</h6>
             <a href="/details"> More</a>
           </div>
-          <div key={i} className={styles.grid}>
+          <div className={styles.grid}>
             {el.Hindi.map((el, i) => (
-              <div className={styles.innerbox}>
-                <img src={el.src} alt="poster" />
-                <p>{el.p}</p>
-              </div>
+              <Link to={"/details"}>
+                {" "}
+                <div key={i + 5} className={styles.innerbox}>
+                  <img src={el.src} alt="poster" />
+                  <p>{el.p}</p>
+                </div>
+              </Link>
             ))}
           </div>
 
@@ -98,11 +111,14 @@ const Page = ({ data }) => {
             <h6>ZEE5 Original Series</h6>
             <a href="/details"> More</a>
           </div>
-          <div key={i} className={styles.grid}>
+          <div className={styles.grid}>
             {el.Top10.map((el, i) => (
-              <div className={styles.innerbox}>
-                <img src={el.src} alt="poster" />
-              </div>
+              <Link to={"/details"}>
+                {" "}
+                <div key={i + 6} className={styles.innerbox}>
+                  <img src={el.src} alt="poster" />
+                </div>
+              </Link>
             ))}
           </div>
         </div>
